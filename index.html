@@ -602,19 +602,55 @@
 
 <!-- Firebase Script -->
 <script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
-  import { getDatabase, ref, set, push, onValue, onDisconnect, serverTimestamp, get, update, remove } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, sendEmailVerification, updateProfile, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-auth.js";
 
-  const firebaseConfig = {
-    apiKey: "AIzaSyCCANSgKALzfeBWOvaCCbnYzzEL2n8Yj_8",
-    authDomain: "fir-6d3d4.firebaseapp.com",
-    databaseURL: "https://fir-6d3d4-default-rtdb.firebaseio.com",
-    projectId: "fir-6d3d4",
-    storageBucket: "fir-6d3d4.appspot.com",
-    messagingSenderId: "34601518464",
-    appId: "1:34601518464:web:14f60f012e99f349142d65"
-  };
+
+  // Import the functions you need from the SDKs you need
+
+
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.2.1/firebase-app.js";
+
+
+  // TODO: Add SDKs for Firebase products that you want to use
+
+
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+
+
+  // Your web app's Firebase configuration
+
+
+  const firebaseConfig = {
+
+
+    apiKey: "AIzaSyCoKAoarWlu8B6cnIw549hfg_UPe8YRSko",
+
+
+    authDomain: "nepchat-aac9d.firebaseapp.com",
+
+
+    databaseURL: "https://nepchat-aac9d-default-rtdb.firebaseio.com",
+
+
+    projectId: "nepchat-aac9d",
+
+
+    storageBucket: "nepchat-aac9d.firebasestorage.app",
+
+
+    messagingSenderId: "179485804786",
+
+
+    appId: "1:179485804786:web:3ec8a2fc563b08c682286b"
+
+
+  };
+
+
+
+
+
+
 
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
